@@ -1,0 +1,144 @@
+body {
+    margin: 0;
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 0;
+    
+    background-image: url("/img/fondo.jpg");
+    
+
+
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+    background-repeat: no-repeat;
+    
+}
+main{
+    min-height: 71vh;
+}
+h1 {
+    color: rgb(8, 9, 10);
+    font-size: 60px;
+    font-family: 'Trocchi', serif;
+    margin: 50px;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid rgb(238, 70, 70);
+    text-decoration: solid;
+}
+p {
+    color: #817e84;
+    font-family: Georgia;
+    font-size: 35px;
+    margin: 40px;
+    display: flex;
+    text-align: center;
+    flex-direction: row;
+    justify-content: flex-end;
+    border: 2px solid;
+    border-radius: 50px ;
+    border-color: rgb(117, 5, 84);
+    
+}
+.rows {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-color: aqua;
+}
+
+.container-nav{
+    display: flex;
+    padding: 10px;
+    height: 50px;
+    background-color: #758bfd;
+
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+}
+.brand{
+    display: flex;
+    align-items: center;
+}
+li>a{
+    padding: 8px 24px;
+
+}
+li{
+    list-style-type: none;
+
+}
+a{
+    color:rgb(236, 178, 248);
+    text-decoration: none;
+
+}
+.nav-links{
+    display: flex;
+    align-items: center;
+}
+.button-menu-toggle{
+    display: none;
+}
+.acercade-img{
+    display: flex;
+    justify-content: center;
+    
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: aliceblue;
+    min-height: 200px;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+}
+
+/*barra de navegación sea adaptable, utilizando una media query*/
+@media (max-width: 768px) {
+    .column{
+        flex: 100%;
+    }
+    .nav-links{
+        display: none;
+    }
+    .button-menu-toggle{
+        display: block;
+        background-color: white;
+        border: none;
+        border-radius:  50px;
+        padding: 0 24px;
+        font-family: monospace;
+        font-weight:bold;
+        font-size: 20px;
+    }
+    .nav-links {
+        position: absolute;
+        display: flex;
+        background-color: rgba(20,20,20,0.95);
+        width: 100%;
+        height: 100%;
+        top: 70px;
+        left: 0%;
+        flex-direction: column;
+        padding-top: 200px;
+        align-items: center;
+        gap: 70px;
+        font-size: 40px;
+
+    }
+    .acercade-img{
+        flex-direction: column;
+        
+    }
+  
+    
+}
