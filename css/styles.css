@@ -101,6 +101,9 @@ footer{
     text-align: center;
     width: 100%;
 }
+.greeting{
+    text-align: center;
+}
 
 /*barra de navegación sea adaptable, utilizando una media query*/
 @media (max-width: 768px) {
